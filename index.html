@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EpicScreen | Where Every Story Becomes Epic.</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="EpicScreen is a premium, next-generation OTT streaming platform. Experience cinema beyond screens with glassmorphism, voice searches, AI recommendation engines, and synchronised Watch Together rooms.">
+  <meta name="keywords" content="movies, streaming, premium OTT, watch together, voice search movies, AI movie chatbot">
+  <meta name="author" content="EpicScreen Startup">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Aurora Ambient Glowing Vectors -->
+  <div class="aurora-container">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+  </div>
+
+  <!-- 1. Trending Cinematic Ticker Ribbon -->
+  <div class="trending-ticker">
+    <div class="ticker-wrap">
+      <div class="ticker-content">
+        <span class="ticker-item">★ Live Watchrooms: <span>1,482 Cinephiles Syncing Now</span></span>
+        <span class="ticker-item">✦ Today's Obsession: <span>Deadpool & Wolverine breaking global box-office
+            records</span></span>
+        <span class="ticker-item">🚀 Epic Originals: <span>Dune: Part Two now streaming in IMAX Enhanced</span></span>
+        <span class="ticker-item">🏆 Critics Choice: <span>Parasite voted 'Film of the Decade' by Epic Review
+            Core</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Frosted Floating Header -->
+  <header>
+    <div class="logo" id="header-logo">
+      <span>EpicScreen</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active" id="nav-home">Home</a></li>
+        <li><a href="#" id="nav-movies">Movies</a></li>
+        <li><a href="#" id="nav-tvshows">TV Shows</a></li>
+        <li><a href="#" id="nav-livetv">Live TV</a></li>
+        <li><a href="#" id="nav-plans">Subscription Plans</a></li>
+        <li><a href="#" id="nav-about">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Search Input -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Search cosmic cinema...">
+      </div>
+
+      <!-- Voice Search Trigger -->
+      <button class="voice-search-btn" id="voice-search-btn" title="Voice Command">🎙️</button>
+
+      <!-- Configurations settings gear -->
+      <button class="voice-search-btn" id="header-settings-btn" title="System Settings"
+        style="color: var(--text-gray);">⚙️</button>
+
+      <!-- Profile switching pill -->
+      <div class="profile-pill" id="header-profile-pill">
+        <span class="profile-avatar" id="header-profile-avatar">🔮</span>
+        <span class="profile-name" id="header-profile-name">The Cinephile</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Dynamic Large Cinematic Hero banner -->
+  <section class="hero-showcase" style="display: none;">
+    <div class="hero-video-container" id="hero-video-container">
+      <!-- Backdrop image loaded by default -->
+      <img src="" alt="" class="hero-backdrop-img" id="hero-backdrop-img">
+      <!-- YouTube trailer iframe injected here dynamically by ui.js -->
+    </div>
+
+    <div class="hero-veil"></div>
+
+    <div class="hero-content">
+      <span class="hero-badge">⚡ Global Premiere</span>
+      <h1 class="hero-title" id="hero-title">Loading Epic Cinema...</h1>
+
+      <div class="hero-meta" id="hero-meta">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <p class="hero-tagline" id="hero-tagline">
+        Select a movie to explore cast listings, reviews, and high-fidelity trailers.
+      </p>
+
+      <div class="hero-actions-row">
+        <button class="btn btn-primary" id="hero-play-btn">▶ Watch Now</button>
+        <button class="btn btn-accent" id="hero-mylist-btn">+ My List</button>
+        <button class="btn btn-accent" id="hero-info-btn">ℹ More Info</button>
+      </div>
+    </div>
+
+    <div class="hero-bullets" id="hero-bullets">
+      <span class="bullet active"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+    </div>
+  </section>
+
+  <!-- 4. Floating Mood Vibe Selection Bar -->
+  <div class="mood-bar" style="display: none;">
+    <span class="mood-label">Vibe Grid:</span>
+    <div class="mood-pills">
+      <span class="mood-pill" data-mood="adrenaline">⚡ Adrenaline Rush</span>
+      <span class="mood-pill" data-mood="mindbend">🌀 Mind Bend</span>
+      <span class="mood-pill" data-mood="cozy">🍂 Cozy Evening</span>
+      <span class="mood-pill" data-mood="romantic">💖 Romantic</span>
+      <span class="mood-pill" data-mood="nightwatch">🌌 Night Watch</span>
+    </div>
+  </div>
+
+  <!-- 5. Categories Rows Container (Rendered dynamically by ui.js) -->
+  <main id="categories-container" class="categories-container">
+    <!-- Dynamic custom category grids render here -->
+  </main>
+
+  <!-- ======================================================================
+       FLOATING WIDGETS & DRAWERS
+       ====================================================================== -->
+
+  <!-- A. AI Recommendation chatbot assistant panel drawer -->
+  <div class="ai-panel-toggle" id="ai-toggle" title="Ask AI Recs">🤖</div>
+
+  <div class="ai-chat-drawer" id="ai-chat-drawer">
+    <div class="ai-drawer-header">
+      <h3 class="ai-header-title">🤖 Epic Neural Core</h3>
+      <button class="modal-close-btn" id="ai-chat-close"
+        style="width:30px; height:30px; position:static;">&times;</button>
+    </div>
+    <div class="ai-chat-messages" id="ai-chat-messages">
+      <div class="chat-message bot">
+        Greetings! I am the EpicScreen AI recommendation node. Tell me what type of cinematic mood you're in, or try
+        these queries:
+        <div style="display:flex; flex-direction:column; gap:0.4rem; margin-top:0.5rem;">
+          <button class="btn btn-accent" style="padding:0.35rem 0.75rem; font-size:0.7rem; justify-content:flex-start;"
+            onclick="document.getElementById('ai-chat-input').value = 'Give me a mind-bending sci-fi'; document.getElementById('ai-send-btn').click();">🌀
+            Mind-bending Sci-Fi</button>
+          <button class="btn btn-accent" style="padding:0.35rem 0.75rem; font-size:0.7rem; justify-content:flex-start;"
+            onclick="document.getElementById('ai-chat-input').value = 'Show me anime masterpieces'; document.getElementById('ai-send-btn').click();">🎌
+            Anime Masterpieces</button>
+          <button class="btn btn-accent" style="padding:0.35rem 0.75rem; font-size:0.7rem; justify-content:flex-start;"
+            onclick="document.getElementById('ai-chat-input').value = 'Recommend romantic dates'; document.getElementById('ai-send-btn').click();">💖
+            Cozy Date Night</button>
+        </div>
+      </div>
+    </div>
+    <div class="ai-chat-input-row">
+      <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="Search vibes, themes, directors...">
+      <button class="ai-send-btn" id="ai-send-btn">➔</button>
+    </div>
+  </div>
+
+  <!-- B. Watch Together Synchronisation Drawer -->
+  <div class="wt-drawer" id="watch-together-drawer">
+    <!-- Rendered dynamically by ui.js -->
+  </div>
+
+  <!-- C. Speech Vocal Search Overlay panel -->
+  <div class="voice-overlay" id="voice-overlay">
+    <div class="voice-wave-container">
+      <span class="voice-bar"></span>
+      <span class="voice-bar"></span>
+      <span class="voice-bar"></span>
+      <span class="voice-bar"></span>
+      <span class="voice-bar"></span>
+      <span class="voice-bar"></span>
+      <span class="voice-bar"></span>
+    </div>
+    <h2 class="voice-status" id="voice-status">Listening for Command...</h2>
+    <span class="voice-subtext" id="voice-subtext">Speak naturally...</span>
+  </div>
+
+  <!-- D. Immersive Glassmorphic Movie Details Modal -->
+  <div class="modal-container" id="details-modal">
+    <!-- Rendered dynamically by ui.js -->
+  </div>
+
+  <!-- E. Profile Switching modal -->
+  <div class="modal-container" id="profile-modal">
+    <!-- Rendered dynamically by ui.js -->
+  </div>
+
+  <!-- F. Settings Configurations modal -->
+  <div class="modal-container" id="settings-modal">
+    <!-- Rendered dynamically by ui.js -->
+  </div>
+
+  <!-- Premium Footer -->
+  <footer class="epic-footer">
+    <div class="footer-content"
+      style="justify-content: center; flex-direction: column; gap: 0.5rem; text-align: center;">
+      <div class="footer-brand" style="margin-bottom: 0.5rem;">
+        Epic<span>Screen</span>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">
+        <p>© 2026 EpicScreen</p>
+        <p>Designed & Developed by <a href="#" id="footer-about-trigger"
+            style="color: var(--text-gray); transition: color var(--transition-fast);">Yagna</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Controller Entrypoint -->
+  <script type="module" src="js/app.js?v=4"></script>
+</body>
+
+</html>
